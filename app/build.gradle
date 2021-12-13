@@ -42,4 +42,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //añado la dependencia de las corrutinas para poder realizarlas
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    //dependencias de firebase
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
 }
+//servicios de google que tambien son necesarios para iniciar firebase
+apply plugin: 'com.google.gms.google-services'
